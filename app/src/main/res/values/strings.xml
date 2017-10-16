@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AUV Control</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="AUV_Navigation">AUV Navigation</string>
+    <string name="IMU_control">IMU Controller</string>
+    <string name="Setting">Settings</string>
+</resources>

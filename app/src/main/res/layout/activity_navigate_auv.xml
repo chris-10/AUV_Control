@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigateAUV"
+    android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigateAUV"
+    android:padding="16dp"
+    android:background="@drawable/wallpaper">
+
+        <TextView
+            android:id="@+id/textView_angle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="0°"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_strength_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_angle_left"
+            android:layout_marginBottom="140dp"
+            android:text="0%"
+            android:textSize="20sp" />
+
+    <com.hydra.christendsouza.auvcontrol.JoystickView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystickView_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        android:background="@drawable/joystick_background"
+        custom:JV_buttonImage="@drawable/gloss_sphere"
+        custom:JV_fixedCenter="true"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angle"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/textView_strength_left"
+            android:layout_toStartOf="@+id/auto_button"
+            android:layout_marginEnd="11dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_strength_left"
+            android:layout_alignStart="@+id/textView9"
+            android:text="Strength"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView9" />
+
+    <Button
+        android:id="@+id/auto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:elevation="12dp"
+        android:text="AUTO PILOT"
+        />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auto_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Auto Pilot Status : OFF"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+    </RelativeLayout>
+</LinearLayout>

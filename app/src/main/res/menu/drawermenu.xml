@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/cb" android:title="Navigate" android:icon="@drawable/ic_navigation_black_24dp"/>
+    <item android:id="@+id/imu" android:title="IMU Control" android:icon="@drawable/ic_3d_rotation_black_24dp"/>
+    <item android:id="@+id/cc" android:title="Chemical Control" android:icon="@drawable/ic_local_drink_black_24dp"/>
+    <item android:id="@+id/uc" android:title="Ultrasonic Control" android:icon="@drawable/ic_all_out_black_24dp"/>
+    <item android:id="@+id/settings" android:title="Settings" android:icon="@drawable/ic_settings_black_24dp"/>
+    <item android:id="@+id/exit" android:title="Exit" android:icon="@drawable/ic_close_black_24dp"/>
+</menu>
